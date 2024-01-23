@@ -61,6 +61,8 @@ print(animals[-7:-2])  # using negative indexes'
 print(animals[len(animals) - 7: len(animals) - 2])  # using positive index
 
 print(animals[4:])
+# OR
+print(animals[4: len(animals)])
 print(animals[-4:])
 
 print(animals[:6])
@@ -70,3 +72,20 @@ print(animals[::2])
 print(animals[-8:-1:2])
 
 print(animals[1:8:3])
+
+"""
+List Comprehension
+"""
+# List = [Expression(item) for item in iterable if Condition]
+# Expression : it is the item which is being iterated.
+# Iterable : It can be list, dictionaries, sets, and even in arrays and strings
+# Condition : Condition checks if the items should be added to the new list or not.
+
+names = ["Milo", "Sarah", "Bruno", "Anastasia"]
+namesWith_o = [item for item in names if "o" in item]
+print(namesWith_o)
+
+lst = [i for i in range(4)]
+print(lst)
+lst = [i**2 for i in range(11) if i % 2 == 0]
+print(lst)
