@@ -82,6 +82,7 @@ List Comprehension
 # Condition : Condition checks if the items should be added to the new list or not.
 
 names = ["Milo", "Sarah", "Bruno", "Anastasia"]
+# Accepts items with the small letter “o” in the new list
 namesWith_o = [item for item in names if "o" in item]
 print(namesWith_o)
 
@@ -89,3 +90,7 @@ lst = [i for i in range(4)]
 print(lst)
 lst = [i**2 for i in range(11) if i % 2 == 0]
 print(lst)
+
+# Accepts items which have more than 4 letters
+nameLen_4 = [item for item in names if len(item) > 4]
+print(nameLen_4)
